@@ -58,6 +58,13 @@ VALUES
 SELECT DISTINCT name 
 FROM stocks;
 
-/* Returned result with name column. Table contained 5 rows of the name of distinct stock:
-     Apple, Domino's, easyJet, Rolls-Royce and Zoom */
+/* Returned result with name column. Table contained 5 rows of the name of distinct stock: 
+Apple, Domino's, easyJet, Rolls-Royce and Zoom */
 
+--Basic Requirement: 2. Query all data for a single stock. Do you notice any overall trends?
+
+SELECT * 
+FROM stocks
+WHERE name = "Apple Inc. (AAPL)";
+
+/* Not enough data to identify trend. However, there seems to be a three-month dip.*/
