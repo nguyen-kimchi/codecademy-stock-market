@@ -1,4 +1,5 @@
 --Manipulation: Creating table 
+
 CREATE TABLE stocks (
 	symbol TEXT,
 	name TEXT,
@@ -6,6 +7,7 @@ CREATE TABLE stocks (
 	price INTEGER);
 
 --Manipulation: Collecting stock data and inserting into table
+
 INSERT INTO stocks (symbol, name, datetime, price)
 VALUES
 	("+", "Apple Inc. (AAPL)", "2020-12-01 21:00:00", 122.72),
@@ -50,4 +52,12 @@ VALUES
 	("+", "Zoom Video Communications, Inc. (ZM)", "2020-09-01 21:00:00", 457.69),
 	("+", "Zoom Video Communications, Inc. (ZM)", "2020-08-03 21:00:00", 268.00),
 	("+", "Zoom Video Communications, Inc. (ZM)", "2020-07-01 21:00:00", 259.13);
+
+-- Basic Requirement: 1. What are the distinct stocks in the table?
+
+SELECT DISTINCT name 
+FROM stocks;
+
+/* Returned result with name column. Table contained 5 rows of the name of distinct stock:
+     Apple, Domino's, easyJet, Rolls-Royce and Zoom */
 
