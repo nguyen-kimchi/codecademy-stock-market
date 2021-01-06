@@ -92,3 +92,14 @@ SELECT name, MAX(price) FROM stocks;
 
 SELECT name, MIN(price) FROM stocks;
 -- This returns min price with name 
+
+--Intermediate Challenge: 1 and 2. Look at key statistics about data and group by stock
+
+SELECT name, 
+	MAX(price), MIN(price), AVG(price)
+FROM stocks
+GROUP BY name
+ORDER BY name;
+-- Looks at the min, max and average closing price for each stock 
+
+
