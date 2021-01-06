@@ -71,4 +71,24 @@ WHERE name = "Apple Inc. (AAPL)";
 
 --Basic Requirement: 3. Which rows have price above 100? between 40-50, etc?
 
+SELECT * FROM stocks
+WHERE price > 100;
 
+SELECT * FROM stocks
+WHERE price > 40 AND price < 50 ;
+
+-- Basic Requirement: 4. Sort the table by price. What are the minimum and maximum prices?
+
+SELECT * FROM stocks
+ORDER BY price DESC;
+-- This sorts table by highest price descending
+
+SELECT * FROM stocks
+ORDER BY price ASC;
+-- This sorts table by lowest price ascending
+
+SELECT name, MAX(price) FROM stocks;
+-- This returns max price with name 
+
+SELECT name, MIN(price) FROM stocks;
+-- This returns min price with name 
