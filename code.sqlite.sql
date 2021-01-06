@@ -67,4 +67,8 @@ SELECT *
 FROM stocks
 WHERE name = "Apple Inc. (AAPL)";
 
-/* Not enough data to identify trend. However, there seems to be a three-month dip.*/
+/* Not enough data to identify trend. However, there seems to be a three-month cycle.*/
+
+--Basic Requirement: 3. Which rows have price above 100? between 40-50, etc?
+
+
